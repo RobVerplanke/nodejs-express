@@ -1,7 +1,6 @@
 const db = require('../db.js');
-const CustomNotFoundError = require('../errors/CustomNotFoundError.js');
-
 const asyncHandler = require('express-async-handler');
+const CustomNotFoundError = require('../errors/CustomNotFoundError.js');
 
 const getUserById = asyncHandler(async (req, res) => {
   const { userId } = req.params;
